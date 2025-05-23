@@ -19,8 +19,8 @@ concepts=(
 )
 
 num_images=30
-base_ground_truth_path="/share/u/kevin/ErasingDiffusionModels/final_data/prompts"
-base_model_path="/share/u/kevin/ErasingDiffusionModels/final_models"
+base_ground_truth_path="/path/to/your/prompts"
+base_model_path="/path/to/your/models"
 results_dir="./rece_results"
 # # Run Python script
 # python3 eval.py \
@@ -35,10 +35,10 @@ results_dir="./rece_results"
 # Shared paths
 # FOUNDATION_MODEL_PATH="stable-diffusion-v1-5/stable-diffusion-v1-5"
 # RESULTS_DIR="./rece_results"
-# MASK_PATH="/share/u/kevin/ErasingDiffusionModels/masks/center_square_mask.png"
+# MASK_PATH="/path/to/your/masks/center_square_mask.png"
 # RESULTS_FILE="inpaint_scores.txt"
 
-# # Loop through each method and concept
+# Loop through each method and concept
 # for METHOD in "${methods[@]}"; do
 #   for CONCEPT in "${concepts[@]}"; do
 #     echo "Running inpainting for method: $METHOD, concept: $CONCEPT"
@@ -57,7 +57,7 @@ results_dir="./rece_results"
 # echo "Inpainting complete"
 
 
-prompts_dir="/share/u/kevin/ErasingDiffusionModels/final_data/prompts"
+prompts_dir="/path/to/your/prompts"
 intermediate_results_dir="./noisy_attack_results"
 device="cuda:0"  # Change to "cpu" or another device if needed
 

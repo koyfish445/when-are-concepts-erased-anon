@@ -14,7 +14,6 @@ for method in "${methods[@]}"; do
         initializer_token=${initializer_tokens[$j]}
         
         # Construct the model path
-        # MODEL_PATH="/share/u/kevin/ErasingDiffusionModels/final_models/${method}_${concept}"
         MODEL_PATH="/path/to/your/models/${method}_${concept}"
 
         # Define the data directory

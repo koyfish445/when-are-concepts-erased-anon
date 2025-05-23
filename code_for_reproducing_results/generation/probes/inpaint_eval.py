@@ -87,14 +87,14 @@ def main():
 
     concept = args.concept
     method = args.method
-    model_path = f"/share/u/kevin/ErasingDiffusionModels/final_models/{method}_{concept}"
+    model_path = f"/path/to/your/models/{method}_{concept}"
     if method == "stable_diffusion":
         model_path = "CompVis/stable-diffusion-v1-4"
     if method == "noised":
-        model_path = "/share/u/kevin/ErasingDiffusionModels/noised_models/noised_vangogh_0.0093"
+        model_path = "/path/to/your/models/noised_vangogh_0.0093"
 
-    init_images_path = f"/share/u/kevin/ErasingDiffusionModels/final_results/stable_diffusion/{concept}/ground_truth"
-    ground_truth_dataset_path = f"/share/u/kevin/ErasingDiffusionModels/final_data/prompts/{concept}.csv"
+    init_images_path = f"/path/to/your/results/stable_diffusion/{concept}/ground_truth"
+    ground_truth_dataset_path = f"/path/to/your/prompts/{concept}.csv"
 
     output_dir = os.path.join(args.results_dir, method, concept)
     inpaint_dir = os.path.join(output_dir, "inpainting")
